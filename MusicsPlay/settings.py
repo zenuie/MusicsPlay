@@ -66,6 +66,12 @@ TEMPLATES = [
         },
     },
 ]
+#Static files(CSS,JavaScript,Images)
+STATIC_URL = 'static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'template/static'),
+    os.path.join(BASE_DIR, 'template/images')
+]
 
 WSGI_APPLICATION = 'MusicsPlay.wsgi.application'
 

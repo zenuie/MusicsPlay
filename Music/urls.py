@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import Music_list,Music_detail,MusicAPIView,MusicAPIViewDetail
+from Music.views import homepage_view
 
 urlpatterns = [
-    path('MusicAPIView/',MusicAPIView.as_view()),
-    path('detail/<int:pk>', MusicAPIViewDetail.as_view()),
+    path('', homepage_view, name='index')
 ]
