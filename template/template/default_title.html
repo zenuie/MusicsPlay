@@ -4,7 +4,7 @@ Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
 
-Name       : Breadth 
+Name       : Breadth
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20140331
@@ -19,7 +19,7 @@ Released   : 20140331
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
-    <link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'default-no-banner.css' %}" rel="stylesheet" type="text/css" media="all"/>
     <link href="{% static 'fonts.css' %}" rel="stylesheet" type="text/css" media="all"/>
 
     <!--&lt;!&ndash;[if IE 6]>
@@ -37,7 +37,7 @@ Released   : 20140331
             <ul>
                 <li><a href="{% url 'index' %}" accesskey="1" title="1">首頁</a></li>
                 <li><a href="{% url 'song_list' %}" accesskey="2" title="">歌曲列表</a></li>
-                <li class="current_page_item"><a href="{% url 'singer_list' %}" accesskey="3" title="">歌手列表</a></li>
+                <li><a href="{% url 'singer_list' %}" accesskey="3" title="">歌手列表</a></li>
                 <li><a href="{% url 'genre' %}" accesskey="4" title="">曲風</a></li>
                 <li><a href="{% url 'about_me' %}" accesskey="5" title="">關於</a></li>
                 <li><a href="https://soundcloud.com/zenuie-jerry" accesskey="6" title="">相關連結</a></li>

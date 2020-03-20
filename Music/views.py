@@ -14,4 +14,27 @@ from .serializers import MusicSerializer
 
 # Create your views here.
 def homepage_view(request, *args, **kwargs):
-    return render(request, "index.html", {})
+    return render(request, "index.html")
+
+
+def songList(request, *args, **kwargs):
+    return render(request, "template/song_list.html")
+
+
+def singerList(request, *args, **kwargs):
+    return render(request, "template/singer_list.html")
+
+
+def Genre(request, *args, **kwargs):
+    return render(request, "template/genre.html")
+
+
+def Contact(request, *args, **kwargs):
+    return render(request, "template/contact.html")
+
+
+def AboutMe(request, *args, **kwargs):
+    return render(request, "template/about_me.html")
+
+def Test(request, *args, **kwargs):
+    return render(request, "template/test.html")

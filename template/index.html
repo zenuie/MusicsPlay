@@ -13,71 +13,73 @@ Released   : 20140331
 {% load static %}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>破破的音樂庫</title>
-<link rel="shortcut icon" href="{% static 'f_f_object_170_s32_f_object_170_0bg.png' %}">
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="all" />
-<link href="{% static 'fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>破破的音樂庫</title>
+    <link rel="shortcut icon" href="{% static 'images/f_f_object_170_s32_f_object_170_0bg.png' %}">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
+    <link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'fonts.css' %}" rel="stylesheet" type="text/css" media="all"/>
 
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--&lt;!&ndash;[if IE 6]>
+    <link href="default_ie6.css" rel="stylesheet" type="text/css"/><![endif]-->
 
 </head>
 <body>
 <div id="header-wrapper">
-  <div id="header" class="container"> 
-    <div id="logo">
-      <h1><a href="index.html"><img src="{% static 'f_f_object_170_s64_f_object_170_0bg.png' %}" width="30" height="30" >破破的音樂庫</a></h1>
-</div>
-    <div id="menu">
-      <ul>
-        <li class="current_page_item"><a href="#" accesskey="1" title="">贊助</a></li>
-        <li><a href="/template/song_list.html" accesskey="2" title="">歌曲列表</a></li>
-        <li><a href="/template/singer_list.html" accesskey="3" title="">歌手列表</a></li>
-        <li><a href="/template/genre.html" accesskey="4" title="">曲風</a></li>
-        <li><a href="/template/about_me.html" accesskey="5" title="">關於</a></li>
-        <li><a href="https://soundcloud.com/zenuie-jerry" accesskey="6" title="">相關連結</a></li>
-      </ul>
+    <div id="header" class="container">
+        <div id="logo">
+            <h1><a href="{% url 'index' %}"><img src="{% static 'images/f_f_object_170_s64_f_object_170_0bg.png' %}"
+                                                 width="30" height="30">破破的音樂庫</a></h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li class="current_page_item"><a href="{% url 'index' %}" accesskey="1" title="1">首頁</a></li>
+                <li><a href="{% url 'song_list' %}" accesskey="2" title="">歌曲列表</a></li>
+                <li><a href="{% url 'singer_list' %}" accesskey="3" title="">歌手列表</a></li>
+                <li><a href="{% url 'genre' %}" accesskey="4" title="">曲風</a></li>
+                <li><a href="{% url 'about_me' %}" accesskey="5" title="">關於</a></li>
+                <li><a href="https://soundcloud.com/zenuie-jerry" accesskey="6" title="">相關連結</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-<div id="header-featured"> </div>
+<div id="header-featured"></div>
+
 <div id="wrapper">
-  <div id="featured-wrapper">
-    <div id="featured" class="container">
-      <div class="column1"> <span class="icon icon-instagram"></span>
-        <div class="title">
-          <h2>追隨IG</h2>
+    <div id="featured-wrapper">
+        <div id="featured" class="container">
+            <div class="column1"><span class="icon icon-instagram"></span>
+                <div class="title">
+                    <h2>追隨IG</h2>
+                </div>
+                <p>如果喜歡我整理的歌也可以追隨我的IG，偶爾會放我的cover上去喔。</p>
+            </div>
+            <div class="column2"><span class="icon icon-facebook"></span>
+                <div class="title">
+                    <h2>臉書粉絲團</h2>
+                </div>
+                <p>臉書上會發布最近新增歌曲喔，也可以留言說你們想聽甚麼歌曲。</p>
+            </div>
+            <div class="column3"><span class="icon icon-music"></span>
+                <div class="title">
+                    <h2>cover音樂連結</h2>
+                </div>
+                <p>cover的音樂都放這裡的</p>
+            </div>
+            <div class="column4"><span class="icon icon-refresh"></span>
+                <div class="title">
+                    <h2>隨機播放全曲目</h2>
+                </div>
+                <p>隨機播放該音樂庫內所有音樂</p>
+            </div>
         </div>
-        <p>如果喜歡我整理的歌也可以追隨我的IG，偶爾會放我的cover上去喔。</p>
-      </div>
-      <div class="column2"> <span class="icon icon-facebook"></span>
-        <div class="title">
-          <h2>臉書粉絲團</h2>
-        </div>
-        <p>臉書上會發布最近新增歌曲喔，也可以留言說你們想聽甚麼歌曲。</p>
-      </div>
-      <div class="column3"> <span class="icon icon-music"></span>
-        <div class="title">
-          <h2>cover音樂連結</h2>
-        </div>
-        <p>cover的音樂都放這裡的</p>
-      </div>
-      <div class="column4"> <span class="icon icon-refresh"></span>
-        <div class="title">
-          <h2>隨機播放全曲目</h2>
-        </div>
-        <p>隨機播放該音樂庫內所有音樂</p>
-      </div>
     </div>
-  </div>
-  
+
 </div>
 
 <div id="copyright" class="container">
-  <p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+    <p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a
+            href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
-</body>
-</html>
